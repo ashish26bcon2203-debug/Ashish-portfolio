@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Kaushik | Personal Portfolio & Software Developer</title>
+  <meta name="description" content="Official personal portfolio of Ashish Kaushik - B.Tech student at JECRC University, C programmer, and tech enthusiast from Rewari, Haryana. Explore projects, skills, education, and achievements.">
+  <meta name="keywords" content="Ashish Kaushik, Portfolio, JECRC University, C Language, Software Developer, Rewari Haryana, CBSE 2024">
+  <meta name="author" content="Ashish Kaushik">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ashish Kaushik | Personal Portfolio">
+  <meta property="og:description" content="B.Tech Student at JECRC University | C Programmer & AI Enthusiast from Rewari, Haryana">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">Ashish Kaushik</span>
+        <span class="brand-code">/&gt;</span>
+        <span class="brand-badge">B.Tech</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="chatbot-toggle-nav" class="btn btn-sm btn-outline-cyan" title="Chat with Ashish AI">
+          <i class="fa-solid fa-robot"></i>
+          <span>AI Assistant</span>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Opportunities & Collaborations</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ashish Kaushik</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I am a</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate Engineering undergraduate at <strong>JECRC University</strong> with a solid foundation from <strong>CBSE (2024)</strong>. Specializing in <strong>C Programming</strong>, computational logic, data structures, and emerging AI technologies. Based in <strong>Rewari, Haryana</strong>, crafting clean code and innovative digital solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-rocket"></i>
+              <span>View My Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <i class="fa-solid fa-phone"></i>
+              <span>Get In Touch</span>
+            </a>
+            <button id="hero-run-code" class="btn btn-outline-cyan">
+              <i class="fa-solid fa-play"></i>
+              <span>Run C Code Demo</span>
+            </button>
+          </div>
+
+          <!-- Quick Contact Strip -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ashish-kaushik-304109430?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="tel:8708121274" class="social-btn phone-btn" title="Call Ashish">
+              <i class="fa-solid fa-phone"></i>
+              <span>8708121274</span>
+            </a>
+            <a href="https://wa.me/918708121274?text=Hi%20Ashish,%20I%20viewed%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp-btn" title="WhatsApp Message">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="glow-sphere sphere-1"></div>
+            <div class="glow-sphere sphere-2"></div>
+            <div class="avatar-card glass-panel">
+              <div class="avatar-img-container">
+                <img src="assets/avatar.jpg" alt="Ashish Kaushik - Developer Avatar" class="avatar-img" loading="eager">
+                <div class="status-indicator">
+                  <span class="status-dot"></span> Online & Coding
+                </div>
+              </div>
+              <div class="avatar-info">
+                <h3>Ashish Kaushik</h3>
+                <p>B.Tech Student &bull; JECRC University</p>
+                <div class="badge-chips">
+                  <span class="chip"><i class="fa-solid fa-c"></i> C Lang</span>
+                  <span class="chip"><i class="fa-solid fa-robot"></i> AI Chatbot</span>
+                  <span class="chip"><i class="fa-solid fa-location-dot"></i> Rewari, HR</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">JECRC Univ</span>
+                <span class="badge-sub">B.Tech Student</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">CBSE 2024</span>
+                <span class="badge-sub">Senior Secondary</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-right-mid">
+              <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="badge-text">
+                <span class="badge-title">C Language</span>
+                <span class="badge-sub">Core Specialist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="metrics-container">
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="metric-info">
+            <span class="metric-val">B.Tech</span>
+            <span class="metric-label">JECRC University</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="metric-info">
+            <span class="metric-val">2024 Passout</span>
+            <span class="metric-label">CBSE Board (12th)</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-terminal"></i></div>
+          <div class="metric-info">
+            <span class="metric-val">C Programming</span>
+            <span class="metric-label">Primary Stack & DSA</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-map-pin"></i></div>
+          <div class="metric-info">
+            <span class="metric-val">Rewari, Haryana</span>
+            <span class="metric-label">Hometown & Roots</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Biography</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated engineering scholar with a passion for algorithms, foundational C development, and modern intelligent applications.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text and Personal Info -->
+          <div class="about-text-card glass-panel">
+            <div class="about-intro-badge">
+              <i class="fa-solid fa-quote-left"></i>
+              <span>Engineering with passion, logic, and curiosity</span>
+            </div>
+            
+            <p class="about-lead">
+              Hello! I am <strong>Ashish Kaushik</strong>, born and raised in <strong>Rewari, Haryana</strong>. I completed my 12th standard education in <strong>2024 from the Central Board of Secondary Education (CBSE)</strong> with a deep passion for science, mathematics, and technological innovation.
+            </p>
+            <p>
+              Following my school education, I embarked on my technical degree in <strong>B.Tech at JECRC University</strong>. Here, I am honing my core engineering intellect with an intensive focus on low-level programming through <strong>C language</strong>, algorithmic complexity, system concepts, and interactive software development like AI chatbots.
+            </p>
+
+            <div class="bio-details-grid">
+              <div class="bio-item">
+                <span class="bio-label"><i class="fa-solid fa-user"></i> Full Name:</span>
+                <span class="bio-value">Ashish Kaushik</span>
+              </div>
+              <div class="bio-item">
+                <span class="bio-label"><i class="fa-solid fa-map-location-dot"></i> Hometown:</span>
+                <span class="bio-value">Rewari, Haryana, India</span>
+              </div>
+              <div class="bio-item">
+                <span class="bio-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                <span class="bio-value">B.Tech (Pursuing)</span>
+              </div>
+              <div class="bio-item">
+                <span class="bio-label"><i class="fa-solid fa-building-columns"></i> University:</span>
+                <span class="bio-value">JECRC University</span>
+              </div>
+              <div class="bio-item">
+                <span class="bio-label"><i class="fa-solid fa-school"></i> 12th Standard:</span>
+                <span class="bio-value">Completed in 2024 (CBSE)</span>
+              </div>
+              <div class="bio-item">
+                <span class="bio-label"><i class="fa-solid fa-phone"></i> Mobile:</span>
+                <a href="tel:8708121274" class="bio-link">8708121274</a>
+              </div>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <div class="highlight-num">2024</div>
+                <div class="highlight-desc">CBSE 12th Board Milestone</div>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-num">B.Tech</div>
+                <div class="highlight-desc">JECRC University Tech Scholar</div>
+              </div>
+              <div class="highlight-box">
+                <div class="highlight-num">100%</div>
+                <div class="highlight-desc">Commitment to Code Quality</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Developer Terminal Card -->
+          <div class="terminal-card glass-panel">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-code"></i> ashish_profile.c
+              </div>
+              <button class="terminal-action-btn" id="run-c-profile" title="Compile and Run">
+                <i class="fa-solid fa-play"></i> Run
+              </button>
+            </div>
+            
+            <div class="terminal-body">
+              <pre class="code-editor"><code><span class="code-comment">// Ashish Kaushik - Developer Blueprint</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;string.h&gt;</span>
+
+<span class="code-keyword">typedef struct</span> {
+    <span class="code-type">char</span> name[<span class="code-number">50</span>];
+    <span class="code-type">char</span> hometown[<span class="code-number">50</span>];
+    <span class="code-type">char</span> university[<span class="code-number">50</span>];
+    <span class="code-type">int</span>  twelfth_batch;
+    <span class="code-type">char</span> primary_skill[<span class="code-number">50</span>];
+    <span class="code-type">char</span> contact_phone[<span class="code-number">20</span>];
+} <span class="code-type">Developer</span>;
+
+<span class="code-type">int</span> <span class="code-func">main</span>() {
+    <span class="code-type">Developer</span> ashish = {
+        .<span class="code-var">name</span> = <span class="code-string">"Ashish Kaushik"</span>,
+        .<span class="code-var">hometown</span> = <span class="code-string">"Rewari, Haryana"</span>,
+        .<span class="code-var">university</span> = <span class="code-string">"JECRC University"</span>,
+        .<span class="code-var">twelfth_batch</span> = <span class="code-number">2024</span>,
+        .<span class="code-var">primary_skill</span> = <span class="code-string">"C Language"</span>,
+        .<span class="code-var">contact_phone</span> = <span class="code-string">"8708121274"</span>
+    };
+
+    <span class="code-func">printf</span>(<span class="code-string">"Welcome to %s's Portfolio!\n"</span>, ashish.name);
+    <span class="code-func">printf</span>(<span class="code-string">"Location: %s\n"</span>, ashish.hometown);
+    <span class="code-func">printf</span>(<span class="code-string">"Education: B.Tech @ %s\n"</span>, ashish.university);
+    <span class="code-func">printf</span>(<span class="code-string">"CBSE 12th: Passed %d\n"</span>, ashish.twelfth_batch);
+    <span class="code-func">printf</span>(<span class="code-string">"Status: Ready to engineer the future.\n"</span>);
+    <span class="code-keyword">return</span> <span class="code-number">0</span>;
+}</code></pre>
+            </div>
+
+            <!-- Terminal Output Console -->
+            <div class="terminal-console" id="terminal-console">
+              <div class="console-title"><i class="fa-solid fa-terminal"></i> Terminal Output (gcc ashish_profile.c &amp;&amp; ./a.out):</div>
+              <div class="console-lines" id="console-output">
+                <span class="console-line text-cyan">&gt; Welcome to Ashish Kaushik's Portfolio!</span>
+                <span class="console-line text-white">&gt; Location: Rewari, Haryana</span>
+                <span class="console-line text-white">&gt; Education: B.Tech @ JECRC University</span>
+                <span class="console-line text-white">&gt; CBSE 12th: Passed 2024</span>
+                <span class="console-line text-green">&gt; Status: Ready to engineer the future. [Process exited with code 0]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Academic foundations fostering strong logical analysis, technical discipline, and engineering rigor.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline Item 1: JECRC University -->
+          <div class="timeline-card glass-panel active-milestone">
+            <div class="timeline-badge">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Current (Pursuing)</span>
+                <span class="timeline-tag status-pursuing">Higher Education</span>
+              </div>
+              <h3 class="timeline-heading">B.Tech (Bachelor of Technology)</h3>
+              <h4 class="timeline-subheading"><i class="fa-solid fa-university"></i> JECRC University, Jaipur</h4>
+              <p class="timeline-desc">
+                Currently pursuing B.Tech at <strong>JECRC University</strong>. Immersed in comprehensive engineering studies covering fundamental computer science concepts, structured programming with C, computational mathematics, and software design principles.
+              </p>
+              <div class="timeline-features">
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> C Programming & System Logic</div>
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> Data Structures & Algorithms</div>
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> Computer Science Foundations</div>
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> University Tech Projects & Labs</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: CBSE 12th Board -->
+          <div class="timeline-card glass-panel completed-milestone">
+            <div class="timeline-badge">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fa-regular fa-calendar-check"></i> Completed in 2024</span>
+                <span class="timeline-tag status-completed">Completed</span>
+              </div>
+              <h3 class="timeline-heading">Class 12th (Senior Secondary)</h3>
+              <h4 class="timeline-subheading"><i class="fa-solid fa-landmark"></i> CBSE Board (Central Board of Secondary Education)</h4>
+              <p class="timeline-desc">
+                Successfully completed Class 12 in the year <strong>2024</strong> under the <strong>CBSE Board</strong> curriculum from Rewari, Haryana. Developed strong analytical thinking, mathematical problem-solving skills, and academic discipline that prepared me for higher technical engineering studies.
+              </p>
+              <div class="timeline-features">
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> Passed in Year 2024</div>
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> Central Board of Secondary Education (CBSE)</div>
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> Strong Science & Mathematical Base</div>
+                <div class="feat-pill"><i class="fa-solid fa-check"></i> Analytical Foundations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Technical Proficiency</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Expertise</span></h2>
+          <p class="section-subtitle">Core expertise anchored in C Language, algorithmic problem solving, and modern digital development.</p>
+        </div>
+
+        <!-- Featured Skill Spotlight: C Language -->
+        <div class="skill-spotlight glass-panel">
+          <div class="spotlight-header">
+            <div class="c-logo-box">
+              <span class="c-logo-letter">C</span>
+            </div>
+            <div class="spotlight-title-group">
+              <div class="spotlight-badge">Primary Core Specialization</div>
+              <h3 class="spotlight-title">C Language Programming</h3>
+              <p class="spotlight-sub">Low-level systems logic, memory control, pointers, and robust algorithmic thinking</p>
+            </div>
+            <div class="proficiency-circle">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text x="18" y="20.35" class="percentage">90%</text>
+              </svg>
+              <span class="circle-caption">Core Mastery</span>
+            </div>
+          </div>
+
+          <div class="c-topics-grid">
+            <div class="topic-pill">
+              <i class="fa-solid fa-code-branch"></i>
+              <div>
+                <strong>Pointers &amp; References</strong>
+                <span>Address arithmetic & pointer manipulation</span>
+              </div>
+            </div>
+            <div class="topic-pill">
+              <i class="fa-solid fa-memory"></i>
+              <div>
+                <strong>Dynamic Memory</strong>
+                <span>malloc, calloc, realloc, & free hygiene</span>
+              </div>
+            </div>
+            <div class="topic-pill">
+              <i class="fa-solid fa-cubes"></i>
+              <div>
+                <strong>Data Structures</strong>
+                <span>Arrays, Linked Lists, Stacks, Queues</span>
+              </div>
+            </div>
+            <div class="topic-pill">
+              <i class="fa-solid fa-file-code"></i>
+              <div>
+                <strong>File Handling &amp; I/O</strong>
+                <span>Binary & text file streams, serialization</span>
+              </div>
+            </div>
+            <div class="topic-pill">
+              <i class="fa-solid fa-diagram-project"></i>
+              <div>
+                <strong>Structs &amp; Unions</strong>
+                <span>Custom composite data modeling</span>
+              </div>
+            </div>
+            <div class="topic-pill">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div>
+                <strong>Algorithmic Efficiency</strong>
+                <span>Time & space complexity optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Complementary Skills Grid -->
+        <div class="skills-card-grid">
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <h4>Problem Solving &amp; DSA</h4>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>Logical Reasoning</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>Sorting &amp; Searching Algorithms</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>Recursion &amp; Dynamic Logic</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-globe"></i></div>
+              <h4>Web &amp; AI Technologies</h4>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>HTML5 &amp; Modern Semantic Web</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>CSS3 (Glassmorphism, Flex/Grid, Anim)</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>JavaScript &amp; Chatbot Logic</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <h4>Tools &amp; Engineering Culture</h4>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>Git &amp; GitHub Version Control</span>
+                <span>82%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 82%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>VS Code &amp; GCC / Clang Toolchains</span>
+                <span>86%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 86%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="bar-info">
+                <span>Continuous Learning &amp; Teamwork</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications showcasing algorithmic thought, interactive design, and AI integration.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Personal AI Chatbot -->
+          <div class="project-card glass-panel featured-project">
+            <div class="project-img-container">
+              <img src="assets/project-chatbot.jpg" alt="Personal AI Chatbot Project" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary launch-chatbot-trigger">
+                  <i class="fa-solid fa-comment-dots"></i> Try Live Chatbot
+                </button>
+              </div>
+              <span class="project-badge"><i class="fa-solid fa-robot"></i> AI Powered</span>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">AI Chatbot</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">NLP Logic</span>
+                <span class="tag">Interactive UI</span>
+              </div>
+              
+              <h3 class="project-title">Personal AI Chatbot</h3>
+              <p class="project-description">
+                An intelligent conversational AI chatbot assistant designed to answer visitor questions, discuss Ashish's credentials, education at JECRC University, C programming skills, and provide interactive real-time dialogue simulation with intent detection.
+              </p>
+
+              <div class="project-features-list">
+                <div><i class="fa-solid fa-check-circle"></i> Instant query handling regarding Ashish Kaushik</div>
+                <div><i class="fa-solid fa-check-circle"></i> Responsive chat bubble animations & quick question chips</div>
+                <div><i class="fa-solid fa-check-circle"></i> Smart fallback engine & interactive conversation flows</div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-primary launch-chatbot-trigger">
+                  <i class="fa-solid fa-play"></i> Launch Chatbot
+                </button>
+                <a href="#about" class="btn btn-ghost">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Personal Portfolio Website -->
+          <div class="project-card glass-panel">
+            <div class="project-img-container">
+              <img src="assets/project-portfolio.jpg" alt="Personal Portfolio Website" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="#home" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-eye"></i> You Are Here
+                </a>
+              </div>
+              <span class="project-badge"><i class="fa-solid fa-star"></i> Featured</span>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">Vanilla CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Glassmorphism</span>
+              </div>
+              
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-description">
+                A state-of-the-art modern portfolio platform featuring rich cyberpunk/slate glassmorphic aesthetics, canvas particle animations, interactive C compiler simulation, dynamic typing hero, and full mobile responsiveness.
+              </p>
+
+              <div class="project-features-list">
+                <div><i class="fa-solid fa-check-circle"></i> Complete sections: Home, About, Education, Skills, Projects, Contact</div>
+                <div><i class="fa-solid fa-check-circle"></i> Integrated Live Ashish AI Assistant widget</div>
+                <div><i class="fa-solid fa-check-circle"></i> WhatsApp & One-click call integrations for 8708121274</div>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="#home" class="btn btn-primary">
+                  <i class="fa-solid fa-desktop"></i> Live Preview
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: C Language Algorithm & Data Structures Suite -->
+          <div class="project-card glass-panel">
+            <div class="project-img-container code-banner-container">
+              <div class="code-preview-banner">
+                <pre><code><span class="code-comment">// C Data Structure Suite</span>
+<span class="code-keyword">struct</span> Node {
+    <span class="code-type">int</span> data;
+    <span class="code-keyword">struct</span> Node* next;
+};
+<span class="code-type">void</span> <span class="code-func">insert</span>(<span class="code-keyword">struct</span> Node** head, <span class="code-type">int</span> val);</code></pre>
+              </div>
+              <span class="project-badge"><i class="fa-solid fa-c"></i> C Core Suite</span>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Memory Management</span>
+                <span class="tag">GCC</span>
+              </div>
+              
+              <h3 class="project-title">C Language Systems &amp; DSA Suite</h3>
+              <p class="project-description">
+                A collection of modular C programs implementing foundational data structures (Singly/Doubly Linked Lists, Stacks, Queues, Binary Search Trees) and benchmarked search/sort algorithms with rigorous pointer validation.
+              </p>
+
+              <div class="project-features-list">
+                <div><i class="fa-solid fa-check-circle"></i> Zero memory leaks with dynamic allocation (malloc/free)</div>
+                <div><i class="fa-solid fa-check-circle"></i> Modular multi-file C architecture with custom header files</div>
+                <div><i class="fa-solid fa-check-circle"></i> Time and space complexity benchmarking reports</div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-outline-cyan open-c-modal">
+                  <i class="fa-solid fa-terminal"></i> View C Source Code
+                </button>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-trophy"></i> Recognition &amp; Milestones</span>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">Verified milestones marking steady dedication, academic excellence, and technical progression.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-year">2024</span>
+              <h3 class="cert-title">CBSE Senior Secondary Certification (Class XII)</h3>
+              <h4 class="cert-issuer">Central Board of Secondary Education (CBSE)</h4>
+              <p class="cert-desc">
+                Successfully certified for completing Senior Secondary School Examination under CBSE Board with distinction in analytical and science curricula.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-badge"><i class="fa-solid fa-check-double"></i> Verified Board Result</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-box c-icon-box">
+              <i class="fa-solid fa-c"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-year">Academic</span>
+              <h3 class="cert-title">C Language Programming &amp; Logic Certificate</h3>
+              <h4 class="cert-issuer">Computer Science Engineering Foundation</h4>
+              <p class="cert-desc">
+                Demonstrated mastery over C language syntax, pointer mechanics, struct organization, dynamic memory allocation, and algorithmic problem solving.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-badge"><i class="fa-solid fa-check-double"></i> Hands-on Proficiency</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-year">Ongoing</span>
+              <h3 class="cert-title">JECRC University Engineering Scholar</h3>
+              <h4 class="cert-issuer">JECRC University, Jaipur</h4>
+              <p class="cert-desc">
+                Enrolled in the Bachelor of Technology (B.Tech) program, actively participating in coding challenges, laboratory experiments, and collaborative software projects.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-badge"><i class="fa-solid fa-spinner"></i> Active Degree Program</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-year">Technical</span>
+              <h3 class="cert-title">AI Chatbot &amp; Web Innovation Project Recognition</h3>
+              <h4 class="cert-issuer">Independent Technical Showcase</h4>
+              <p class="cert-desc">
+                Engineered an interactive personal AI chatbot and responsive digital portfolio showcasing modern web standards, UI/UX aesthetics, and automated user assistance.
+              </p>
+              <div class="cert-footer">
+                <span class="cert-badge"><i class="fa-solid fa-star"></i> Featured Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Get In Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Ashish Kaushik</span></h2>
+          <p class="section-subtitle">Interested in collaborating or discussing technology? Reach out directly via call, WhatsApp, or through social platforms.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Links -->
+          <div class="contact-info-panel glass-panel">
+            <h3>Let's Build Something Great Together</h3>
+            <p>
+              Whether you have an inquiry, an internship opportunity, a project collaboration, or just want to chat about C programming and tech, feel free to connect!
+            </p>
+
+            <div class="contact-channels">
+              <!-- Phone -->
+              <div class="channel-card">
+                <div class="channel-icon phone-color">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Call / Mobile</span>
+                  <a href="tel:8708121274" class="channel-val">8708121274</a>
+                  <button class="copy-btn" id="copy-phone-btn" title="Copy Phone Number">
+                    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="channel-card">
+                <div class="channel-icon whatsapp-color">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">WhatsApp Direct</span>
+                  <a href="https://wa.me/918708121274?text=Hi%20Ashish,%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect!" target="_blank" rel="noopener noreferrer" class="channel-val">
+                    Chat on WhatsApp (+91 8708121274)
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="channel-card">
+                <div class="channel-icon linkedin-color">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/ashish-kaushik-304109430?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="channel-val">
+                    ashish-kaushik-304109430
+                  </a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="channel-card">
+                <div class="channel-icon github-color">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">GitHub</span>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="channel-val">
+                    github.com (Ashish Kaushik)
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="channel-card">
+                <div class="channel-icon location-color">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Current Location</span>
+                  <span class="channel-val">Rewari, Haryana, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-cta-box">
+              <a href="tel:8708121274" class="btn btn-primary w-100">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>Direct Call: 8708121274</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-panel glass-panel">
+            <div class="form-header">
+              <h3><i class="fa-regular fa-paper-plane"></i> Send a Message</h3>
+              <p>Fill out the form below to initiate direct communication.</p>
+            </div>
+
+            <form id="contact-form" class="portfolio-form">
+              <div class="form-group">
+                <label for="sender-name"><i class="fa-solid fa-user"></i> Your Name *</label>
+                <input type="text" id="sender-name" name="name" required placeholder="e.g. Rahul Sharma" class="form-control">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-email"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+                  <input type="email" id="sender-email" name="email" required placeholder="name@example.com" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="sender-phone"><i class="fa-solid fa-phone"></i> Phone / WhatsApp</label>
+                  <input type="tel" id="sender-phone" name="phone" placeholder="e.g. +91 9876543210" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" id="sender-subject" name="subject" placeholder="Project inquiry, collaboration, or opportunity" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message"><i class="fa-solid fa-message"></i> Message *</label>
+                <textarea id="sender-message" name="message" rows="5" required placeholder="Hello Ashish, I would like to discuss..." class="form-control"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow w-100" id="form-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Transmit Message</span>
+              </button>
+            </form>
+
+            <div id="form-feedback" class="form-feedback hidden">
+              <div class="feedback-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="feedback-text">
+                <h4>Message Ready!</h4>
+                <p>Thank you for reaching out. A communication prompt has been prepared for Ashish Kaushik.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="nav-brand">
+          <span class="brand-code">&lt;</span>
+          <span class="brand-name">Ashish Kaushik</span>
+          <span class="brand-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">B.Tech Student at JECRC University &bull; C Language Programmer &bull; Rewari, Haryana</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social-icons">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ashish-kaushik-304109430?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="tel:8708121274" title="Phone: 8708121274"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/918708121274" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ashish Kaushik. All rights reserved. Designed &amp; Engineered with Precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING AI CHATBOT INTERACTIVE WIDGET -->
+  <div class="chatbot-widget-container" id="chatbot-widget-container">
+    <!-- Floating Trigger Button -->
+    <button class="chatbot-trigger-btn" id="chatbot-trigger-btn" aria-label="Open Ashish AI Assistant">
+      <span class="chatbot-pulse-ring"></span>
+      <div class="trigger-icon-state open-state"><i class="fa-solid fa-robot"></i></div>
+      <div class="trigger-icon-state close-state"><i class="fa-solid fa-xmark"></i></div>
+      <span class="trigger-tooltip">Chat with Ashish AI</span>
+    </button>
+
+    <!-- Chatbot Window Panel -->
+    <div class="chatbot-panel glass-panel hidden" id="chatbot-panel">
+      <div class="chatbot-header">
+        <div class="bot-avatar">
+          <i class="fa-solid fa-robot"></i>
+          <span class="bot-online-indicator"></span>
+        </div>
+        <div class="bot-info">
+          <h4>Ashish AI Assistant</h4>
+          <span class="bot-status">Online &bull; Instant Answers</span>
+        </div>
+        <div class="bot-controls">
+          <button class="bot-control-btn" id="bot-clear-btn" title="Clear chat"><i class="fa-solid fa-rotate-right"></i></button>
+          <button class="bot-control-btn" id="bot-close-btn" title="Close chat"><i class="fa-solid fa-minus"></i></button>
+        </div>
+      </div>
+
+      <!-- Chat Messages Container -->
+      <div class="chatbot-messages" id="chatbot-messages">
+        <!-- Initial Welcome Message -->
+        <div class="chat-msg bot-msg">
+          <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div class="msg-bubble">
+            <p>👋 Hello! I'm <strong>Ashish's Personal AI Assistant</strong>. Ask me anything about Ashish Kaushik, his education at JECRC University, CBSE 2024 passout background, C programming skills, or how to contact him!</p>
+            <span class="msg-timestamp">Just now</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div class="chatbot-suggestions">
+        <button class="chip-btn" data-query="Who is Ashish Kaushik?">Who is Ashish?</button>
+        <button class="chip-btn" data-query="What is your education?">Education</button>
+        <button class="chip-btn" data-query="What are your skills?">Skills &amp; C Language</button>
+        <button class="chip-btn" data-query="How can I contact Ashish?">Contact Number</button>
+        <button class="chip-btn" data-query="What projects have you built?">Projects</button>
+      </div>
+
+      <!-- Chat Input Field -->
+      <form class="chatbot-input-area" id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Type a message or question..." autocomplete="off">
+        <button type="submit" id="chatbot-send-btn" aria-label="Send message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- C CODE MODAL (For C Data Structures Suite) -->
+  <div class="modal-overlay hidden" id="c-modal-overlay">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-solid fa-c"></i> C Language Data Structure: Singly Linked List Implementation
+        </div>
+        <button class="modal-close-btn" id="close-c-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-sub">Written by <strong>Ashish Kaushik</strong> &bull; Complete memory-safe dynamic allocation implementation in standard C.</p>
+        <pre class="code-editor"><code><span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;stdlib.h&gt;</span>
+
+<span class="code-comment">// Node Definition for Dynamic Linked List</span>
+<span class="code-keyword">typedef struct</span> <span class="code-type">Node</span> {
+    <span class="code-type">int</span> data;
+    <span class="code-keyword">struct</span> <span class="code-type">Node</span>* next;
+} <span class="code-type">Node</span>;
+
+<span class="code-comment">// Create a new node with malloc</span>
+<span class="code-type">Node</span>* <span class="code-func">create_node</span>(<span class="code-type">int</span> data) {
+    <span class="code-type">Node</span>* newNode = (<span class="code-type">Node</span>*)<span class="code-func">malloc</span>(<span class="code-keyword">sizeof</span>(<span class="code-type">Node</span>));
+    <span class="code-keyword">if</span> (!newNode) {
+        <span class="code-func">printf</span>(<span class="code-string">"Memory Allocation Failed!\n"</span>);
+        <span class="code-keyword">return</span> <span class="code-constant">NULL</span>;
+    }
+    newNode-&gt;data = data;
+    newNode-&gt;next = <span class="code-constant">NULL</span>;
+    <span class="code-keyword">return</span> newNode;
+}
+
+<span class="code-comment">// Insert at beginning</span>
+<span class="code-type">void</span> <span class="code-func">insert_head</span>(<span class="code-type">Node</span>** head, <span class="code-type">int</span> data) {
+    <span class="code-type">Node</span>* newNode = <span class="code-func">create_node</span>(data);
+    newNode-&gt;next = *head;
+    *head = newNode;
+}
+
+<span class="code-comment">// Print entire list</span>
+<span class="code-type">void</span> <span class="code-func">print_list</span>(<span class="code-type">Node</span>* head) {
+    <span class="code-type">Node</span>* curr = head;
+    <span class="code-func">printf</span>(<span class="code-string">"List: "</span>);
+    <span class="code-keyword">while</span> (curr != <span class="code-constant">NULL</span>) {
+        <span class="code-func">printf</span>(<span class="code-string">"[%d] -&gt; "</span>, curr-&gt;data);
+        curr = curr-&gt;next;
+    }
+    <span class="code-func">printf</span>(<span class="code-string">"NULL\n"</span>);
+}
+
+<span class="code-comment">// Free all memory to avoid leaks</span>
+<span class="code-type">void</span> <span class="code-func">free_list</span>(<span class="code-type">Node</span>* head) {
+    <span class="code-type">Node</span>* temp;
+    <span class="code-keyword">while</span> (head != <span class="code-constant">NULL</span>) {
+        temp = head;
+        head = head-&gt;next;
+        <span class="code-func">free</span>(temp);
+    }
+}</code></pre>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline-cyan" id="copy-c-code-btn">
+          <i class="fa-regular fa-copy"></i> Copy Code
+        </button>
+        <button class="btn btn-primary" id="modal-run-c-btn">
+          <i class="fa-solid fa-play"></i> Simulate Execution
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
